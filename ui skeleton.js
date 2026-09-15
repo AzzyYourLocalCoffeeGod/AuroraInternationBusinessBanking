@@ -81,7 +81,7 @@ const INITIAL_INVOICES = [
 ];
 
 const INITIAL_LOG = [
-  { time: "2026-08-20 09:14", text: "INV-1042 marked paid by DCH Imports" },
+  { time: "2026-08-20 09:14", text: "INV-1042 marked paid by The Cedar Tree Company Inc." },
   { time: "2026-09-01 11:02", text: "INV-1043 sent to Anchor Line Logistics" },
   { time: "2026-09-02 16:40", text: "INV-1045 sent to Tokyo Marine Supply" },
 ];
@@ -327,7 +327,7 @@ export default function MeridianDashboard() {
       <div style={{ padding: "18px 24px", borderBottom: `1px solid ${COLORS.border}`, display: "flex", alignItems: "baseline", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 12 }}>
           <span style={{ fontFamily: FONT_SERIF, fontSize: 20 }}>Meridian</span>
-          <span style={{ fontSize: 13, color: COLORS.textMuted }}>DCH Imports</span>
+          <span style={{ fontSize: 13, color: COLORS.textMuted }}>The Cedar Tree Company Inc.</span>
         </div>
         <button
           onClick={() => setShowForm(true)}

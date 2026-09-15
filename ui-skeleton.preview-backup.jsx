@@ -105,7 +105,7 @@ const INITIAL_INVOICES = [
 ];
 
 const INITIAL_LOG = [
-  { time: "2026-08-20 09:14", text: "INV-1042 marked paid by DCH Imports" },
+  { time: "2026-08-20 09:14", text: "INV-1042 marked paid by The Cedar Tree Company Inc." },
   { time: "2026-09-01 11:02", text: "INV-1043 sent to Anchor Line Logistics" },
   { time: "2026-09-02 16:40", text: "INV-1045 sent to Tokyo Marine Supply" },
 ];
@@ -222,7 +222,7 @@ export default function MeridianDashboard() {
           return { ...inv, status: "sent" };
         }
         if (inv.status === "sent") {
-          addLog(`${inv.id} marked paid by DCH Imports`);
+          addLog(`${inv.id} marked paid by The Cedar Tree Company Inc.`);
           return { ...inv, status: "paid", compliance: "verified" };
         }
         return inv;
@@ -310,7 +310,7 @@ export default function MeridianDashboard() {
           <span style={{ fontFamily: FONT_SERIF, fontSize: 20, letterSpacing: 0.3 }}>
             Meridian
           </span>
-          <span style={{ fontSize: 13, color: COLORS.textMuted }}>DCH Imports</span>
+          <span style={{ fontSize: 13, color: COLORS.textMuted }}>The Cedar Tree Company Inc.</span>
         </div>
         <button
           onClick={() => setShowForm(true)}

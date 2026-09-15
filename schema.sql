@@ -17,7 +17,7 @@ CREATE TYPE currency_code AS ENUM ('CAD', 'USD', 'CNY', 'JPY');
 -- ------------------------------------------------------------
 -- businesses
 -- One row per business using the platform. Right now that's just
--- DCH Imports, but this table exists so the system isn't hardcoded
+-- The Cedar Tree Company Inc., but this table exists so the system isn't hardcoded
 -- to a single company.
 -- ------------------------------------------------------------
 CREATE TABLE businesses (
